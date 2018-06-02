@@ -24,8 +24,8 @@
 </head>
 <body>
 <h1>欢迎吖，这里是大山的测试页</h1>
-<form action="/MTgiant/public/index.php/email" method="post">
-<p id="first">你是谁吖:</p><input type="username" id="username" placeholder="input your name">
+<form action="/MTgiant/public/index.php/emailtest" method="get">
+<p id="first">你是谁吖:</p><input type="username" name="username" placeholder="input your name">
 <p id="second">你的邮箱地址嘞:</p><input type="email" name="email" placeholder="input your email address">
 <input type="Submit" value="让我给你发邮件吧" onclick="Email()">
 </form>
