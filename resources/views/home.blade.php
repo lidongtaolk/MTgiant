@@ -7,7 +7,7 @@
     <title>Home</title>
     <style type="text/css">
         body{
-            background-image: url('../image/home.jpg');
+            background-image: url('/image/home.jpg');
             background-size:100%;
             background-repeat:no-repeat;
         }
@@ -21,7 +21,7 @@
         }
         article{
             margin:0 auto;
-            width:1000px;
+            width:1200px;
             height:630px;
             border-radius: 50px;
             background-color:rgba(240,248,255,0.5);
@@ -34,7 +34,7 @@
             flex-direction:column;
         }
         #avatar{
-            background-image: url('../image/avatar.jpg');
+            background-image: url('/image/avatar.jpg');
             background-size:150%;
             background-repeat: no-repeat;
             background-position-x:-30px;

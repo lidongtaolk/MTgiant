@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\user;
+use App\Mail\testEmail;
 
 use DB;
 use Mail;
@@ -21,6 +22,7 @@ class testEmailController extends Controller
 	     DB::insert('insert into users (name,email,password) values (?, ?, ?)',[$name,$email,123456]);
 	 }
 	// Mail::send($request->input('email'))
+	 Mail::to($email)->send(new testEmail());
     }
 
 }

@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,7 @@ return [
     |
     */
 
-    'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', '1072456645@qq.com'),
-        'name' => env('MAIL_FROM_NAME', 'MTgiant'),
-    ],
+    'from' => ['address' => env('MAIL_FROM_ADDRESS', '1072456645@qq.com'),'name' => env('MAIL_FROM_NAME', 'MTgiant')],
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +68,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
 
     /*
     |--------------------------------------------------------------------------

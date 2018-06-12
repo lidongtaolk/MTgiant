@@ -20,3 +20,7 @@ Route::get('/test',function(){
 });
 
 Route::get('/emailtest','testEmailController@send');
+
+Route::get('/home',function(){
+    return view('home');
+});
