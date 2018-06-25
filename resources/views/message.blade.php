@@ -18,7 +18,7 @@
             newRem();
         })();
     </script>
-    <script src="/js/echarts.common.min.js"></script>
+    <script src="/js/echarts.common.js"></script>
     <script type="text/javascript">
         //指定图标的配置和数据
         var option = {
