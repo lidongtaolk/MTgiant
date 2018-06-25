@@ -57,6 +57,9 @@
         }
         #avatar{
             /*text-align: center;*/
+            background-image:url('/image/avatar.jpg');
+            background-size:100%;
+            background-repeat:no-repeat;
             position: relative;
             left:3.5rem;
             top:0.25rem;

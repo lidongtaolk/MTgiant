@@ -35,7 +35,7 @@
         }
         #avatar{
             background-image: url('/image/avatar.jpg');
-            background-size:150%;
+            background-size:100%;
             background-repeat: no-repeat;
             background-position-x:-30px;
             width:100px;
