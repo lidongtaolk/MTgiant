@@ -18,6 +18,7 @@
             newRem();
         })();
     </script>
+    <script src="/js/echarts.common.min.js"></script>
     <script type="text/javascript">
         //指定图标的配置和数据
         var option = {
@@ -118,7 +119,7 @@
             Born in：1999.8.6；<br>
             Description: a man who is always clumsy in daily life<br>
         </p>
-        <div id="chart" style="height:10rem"></div>
+        <div id="chartmain" style="height:10rem"></div>
     </article>
 </body>
 </html>
