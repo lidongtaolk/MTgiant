@@ -24,3 +24,7 @@ Route::get('/emailtest','testEmailController@send');
 Route::get('/home',function(){
     return view('home');
 });
+
+Route::get('/message',function(){
+    return view('message');
+});

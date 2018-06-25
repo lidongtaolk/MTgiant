@@ -60,6 +60,7 @@
             background-image:url('/image/avatar.jpg');
             background-size:100%;
             background-repeat:no-repeat;
+	    background-position-y:0.1rem;
             position: relative;
             left:3.5rem;
             top:0.25rem;

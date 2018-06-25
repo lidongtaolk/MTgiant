@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "ajv": "^6.5.0",
+        "echarts": "^4.1.0",
         "gulp": "^3.9.1",
         "gulp-concat": "^2.6.1",
         "gulp-jshint": "^2.1.0",
