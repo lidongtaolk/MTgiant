@@ -103,7 +103,7 @@
             font-size:0.5rem;
             text-align: center;
         }
-        article p{
+        article p,pre{
             font-size:0.5rem;
             color:blueviolet;
         }
