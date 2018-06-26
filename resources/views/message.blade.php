@@ -20,8 +20,17 @@
     </script>
     <script src="/js/require.js"></script>
     <script type="text/javascript">
+<<<<<<< HEAD
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+        //指定图标的配置和数据
+=======
       	 var echarts = require('echarts')
 	 //指定图标的配置和数据
+>>>>>>> 8f15c5eb6a73b42030f6050217945f67029472d7
         var option = {
             title:{
                 text:'ECharts 数据统计'
