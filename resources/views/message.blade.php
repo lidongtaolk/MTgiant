@@ -20,6 +20,11 @@
     </script>
     <script src="/js/require.js"></script>
     <script type="text/javascript">
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
         //指定图标的配置和数据
         var option = {
             title:{
