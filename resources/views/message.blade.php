@@ -19,7 +19,7 @@
         })();
     </script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
-    <script src="../../public/js/echart.min.js"></script>
+    <script src="/js/echarts.min.js"></script>
     <script>
     $('document').ready(function(){
         console.log($('article pre'));
