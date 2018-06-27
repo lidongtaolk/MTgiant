@@ -18,15 +18,46 @@
             newRem();
         })();
     </script>
-    <script src="/js/require.js"></script>
-    <script type="text/javascript">
-        require.config({
-            paths: {
-                echarts: 'http://echarts.baidu.com/build/dist'
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script src="/js/echart.common.min.js"></script>
+    <script>
+    $('document').ready(function(){
+        console.log($('article pre'));
+        $('article pre').slideUp();
+        $('article p').slideUp();
+        $('#resume').bind({
+            mouseover:function(){
+                $('#resume').css("color","blueviolet");
+            },
+            mouseleave:function(){
+                $('#resume').css("color","black")
+            },
+            click:function(){
+                $('article p').slideToggle();
             }
         });
+        $('#text').bind({
+            mouseover:function(){
+                $('#text').css("color","blueviolet");
+            },
+            mouseleave:function(){
+                $('#text').css("color","black")
+            },
+            click:function(){
+                $('article pre').slideToggle();
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript">
+        //require.config({
+        //    paths: {
+        //        echarts: 'http://echarts.baidu.com/build/dist'
+        //    }
+        //});
         //指定图标的配置和数据
-        var option = {
+        window.onload=function(){
+            var option = {
             title:{
                 text:'ECharts 数据统计'
             },
@@ -51,6 +82,7 @@
 
         //使用制定的配置项和数据显示图表
         myChart.setOption(option);
+        }
     </script>
     <style type="text/css">
         html{
@@ -77,6 +109,17 @@
             flex-direction: column;
             background-color: aqua;
         }*/
+        @keyframes ball{
+            0%{
+                transform: translateY(0rem) scale(1.6,0.9);
+            }
+            50%{
+                transform:translateY(-3rem) scale(0.9,1.6);
+            }
+            100%{
+                transform:translateY(0rem) scale(1.6,0.9);
+            }
+        }
         header{
             background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
             /*background-color:rgba(127,255,212,0.15);*/
@@ -94,7 +137,7 @@
             background-image:url('/image/avatar.jpg');
             background-size:100%;
             background-repeat:no-repeat;
-	    background-position-y:0.1rem;
+	        background-position-y:0.1rem;
             position: relative;
             left:3.5rem;
             top:0.25rem;
@@ -103,6 +146,18 @@
             border-radius: 20rem;
             box-shadow: 0 0 0.3rem black;
         }
+        
+        .ball{
+            background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+            position:absolute;
+            width:0.5rem;
+            height:0.5rem;
+            border-radius: 0.5rem;
+        }
+        #ball1{animation:ball 0.75s infinite;}
+        #ball2{animation:ball 0.75s infinite;animation-delay: 0.25s;left:2rem;}
+        #ball3{animation:ball 0.75s infinite;animation-delay: 0.5s;left:7rem;}
+        #ball4{animation:ball 0.75s infinite;animation-delay: 0.75s;left:9.5rem;}
         article h2{
             font-size:0.5rem;
             text-align: center;
@@ -117,16 +172,18 @@
     <header>
             <h1>MTgiant</h1>
             <div id="avatar"></div>
+            <div id="ball1" class="ball"></div><div id="ball2" class="ball"></div>
+            <div id="ball3" class="ball"></div><div id="ball4" class="ball"></div>
     </header>
     <article>
-        <h2>My resume</h2>
+        <h2 id="resume">My resume</h2>
         <p>
             My name: 李东涛 <br>
             Born in：1999.8.6；<br>
             Description: 就一大傻子<br>
         </p>
-        <h2>To my dear</h2>
-        <p><pre>
+        <h2 id="text">To my dear</h2>
+        <pre>
   大一终于要结束了，心心念念了这么久
 的大学生活转眼已过了1/3，我写这篇文章
 的时候，其实正在复习大物，为什么突然想
@@ -149,9 +206,8 @@
 达成那项成就的方法。你是否有所成就的，
 取决于你如何规划了自己的时间。
   我们从来都是在伴随着痛苦成长。
-  （谢谢你花时间来听我诉苦水）
+  （谢谢你们一直在我身边）
         </pre>
-        </p>
         <div id="chartmain" style="height:10rem"></div>
     </article>
 </body>
