@@ -224,7 +224,7 @@
         </pre>
         <div id="chartmain" style="height:10rem"></div>
     </article>
-    <form action="/messageController">
+    <form action="/index.php/messageController">
         <textarea name="message" id="message" cols="40" rows="5"></textarea>
         <button name="submit" id="submit" type="submit" >submit</button>
     </form>

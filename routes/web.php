@@ -28,3 +28,8 @@ Route::get('/home',function(){
 Route::get('/message',function(){
     return view('message');
 });
+
+Route::get('/messageController',function(){
+    echo "yes";
+    return back();
+});
