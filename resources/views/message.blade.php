@@ -169,6 +169,17 @@
             font-size:0.5rem;
             color:blueviolet;
         }
+        form{
+            margin:0 auto;
+        }
+        #message{
+            background-color:rgba(255,255,255,0.75);
+        }
+        #submit{
+            width:2.5rem;
+            height:2rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -213,5 +224,9 @@
         </pre>
         <div id="chartmain" style="height:10rem"></div>
     </article>
+    <form action="/messageController">
+        <textarea name="message" id="message" cols="40" rows="5"></textarea>
+        <button name="submit" id="submit" type="submit" >submit</button>
+    </form>
 </body>
 </html>
