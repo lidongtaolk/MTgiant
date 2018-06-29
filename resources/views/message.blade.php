@@ -151,7 +151,7 @@
         }
         
         .ball{
-            background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+            background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
             position:absolute;
             width:0.5rem;
             height:0.5rem;
@@ -224,8 +224,11 @@
         </pre>
         <div id="chartmain" style="height:10rem"></div>
     </article>
+    <article id="messageArea">
+        <h2>留言区</h2>
+    </article>
     <form action="/index.php/messageController">
-        <textarea name="message" id="message" cols="40" rows="5"></textarea>
+        <textarea name="message" id="message" cols="40" rows="5" placeholder="给我留言吖"></textarea>
         <button name="submit" id="submit" type="submit" >submit</button>
     </form>
 </body>
