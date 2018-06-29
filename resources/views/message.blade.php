@@ -180,6 +180,19 @@
             height:2rem;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+        .span{
+            font-size: 0.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        #username,#email{
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            border-radius: 0.2rem;
+            border:0.02rem solid #c8cccf;
+            width:6rem;
+            height:0.7rem;
+        }
     </style>
 </head>
 <body>
@@ -227,8 +240,12 @@
     <article id="messageArea">
         <h2>留言区</h2>
     </article>
-    <form action="/index.php/messageController">
-        <textarea name="message" id="message" cols="40" rows="5" placeholder="给我留言吖"></textarea>
+    <form action="/messageController">
+        <span class="span">Your name:</span>
+        <input type="username" name="username" id="username" placeholder="告诉我你的名字吖（必填）"><br/>
+        <span class="span">Email-address:</span>
+        <input type="email" name="email" id="email" placeholder="留下邮箱让我跟你说悄悄话啊">
+        <textarea name="message" id="message" cols="35" rows="5" placeholder="给我留言吖"></textarea>
         <button name="submit" id="submit" type="submit" >submit</button>
     </form>
 </body>
