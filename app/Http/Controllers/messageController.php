@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class messageController extends Controller
 {
-    //
+    public function save(){
+	
+    }
 }
