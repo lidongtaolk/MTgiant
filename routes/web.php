@@ -29,7 +29,4 @@ Route::get('/message',function(){
     return view('message');
 });
 
-Route::get('/messageController',function(){
-    echo "yes";
-    return back();
-});
+Route::get('/messageController',"messageController@save")->name("message");
