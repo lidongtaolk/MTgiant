@@ -240,7 +240,7 @@
     <article id="messageArea">
         <h2>留言区</h2>
     </article>
-    <form action="/messageController">
+    <form action="/index.php/messageController">
         <span class="span">Your name:</span>
         <input type="username" name="username" id="username" placeholder="告诉我你的名字吖（必填）"><br/>
         <span class="span">Email-address:</span>
