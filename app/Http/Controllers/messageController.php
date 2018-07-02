@@ -24,7 +24,7 @@ class messageController extends Controller
     public function show(){
         $messages=Message::all();
         $array=[];
-        $i=sizeof($message);
+        $i=sizeof($messages);
         for($k=0;$k<=10&&$i!=0;$k++){
             array_push($array,$messages[$i-1]);
             $i--;
