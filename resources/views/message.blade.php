@@ -47,6 +47,18 @@
                 $('article pre').slideToggle();
             }
         });
+        $.getJSON("/index.php/messageJSON",function(results){
+            $.each(results,function(i,result){
+                var name=result.name;
+                var message=result.message;
+                $("<div/>").css({
+                    "width":"10rem",
+                    "height":"3rem",
+                    "background":"white",
+                    "opacity":"0.75"
+                }).html(name+":\n"+message).appendTo("#messageArea");
+            })
+        })
     });
     </script>
     <script type="text/javascript">
