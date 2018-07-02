@@ -22,6 +22,13 @@ class messageController extends Controller
     	return back();
     }
     public function show(){
-        $message=Message::all();
+        $messages=Message::all();
+        $array=[];
+        $i=sizeof($message);
+        for($k=0;$k<=10&&$i!=0;$k++){
+            array_push($array,$messages[$i-1]);
+            $i--;
+        }
+        return $array;
     }
 }
