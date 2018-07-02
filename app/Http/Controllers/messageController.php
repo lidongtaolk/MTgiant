@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use app\Message;
-use app\User;
+use app\user;
 use DB;
 
 class messageController extends Controller
@@ -13,7 +13,7 @@ class messageController extends Controller
         $name=$request->input("username");
         $email=$request->input("email");
         $message=$request->input("message");
-        $user=User::where("name",$name)
+        $user=user::where("name",$name)
               ->first();
         if($user==null){
             DB::insert('insert into users (name,email,password) values (?, ?, ?)',[$name,$email,123456]);
