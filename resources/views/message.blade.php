@@ -60,9 +60,11 @@
             })
         })
         $("form").submit(function(e){
-            if($("#username").html()==null){
-                e.preventDefault();
-                alert("名字不能留空哦")
+	    console.log("form");
+            if($("#username").val()==""){
+                console.log("val");
+	        e.preventDefault();
+                alert("名字不能留空哦");
             }
         });
     });
