@@ -52,6 +52,8 @@
                 var name=result.name;
                 var message=result.message;
                 $("<div/>").css({
+                    "font-size":"0.5rem",
+                    "margin-top":"0.5rem",
                     "width":"10rem",
                     "height":"3rem",
                     "background":"white",
