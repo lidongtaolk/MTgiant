@@ -60,7 +60,7 @@
             })
         })
         $("form").submit(function(e){
-            if($("#username").html()==null){
+            if($("#username").val()==null){
                 e.preventDefault();
                 alert("名字不能留空哦")
             }
