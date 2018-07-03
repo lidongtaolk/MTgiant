@@ -30,3 +30,5 @@ Route::get('/message',function(){
 });
 
 Route::get('/messageController',"messageController@save");
+
+Route::get('/messageJSON',"messageController@show");

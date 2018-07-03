@@ -18,7 +18,7 @@ class messageController extends Controller
         if($user==null){
             DB::insert('insert into users (name,email,password) values (?, ?, ?)',[$name,$email,123456]);
         }
-        DB::insert('insert into Messages (name,parent_id,message) values (?, ?, ?)',[$name,0,$message]);
+        DB::insert('insert into messages (name,parent_id,message) values (?, ?, ?)',[$name,0,$message]);
     	return back();
     }
     public function show(){
