@@ -113,7 +113,7 @@
             -webkit-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         body{
-            background-color: aquamarine;
+            /*background-color: aquamarine;*/
             background-image: url('/image/message.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
