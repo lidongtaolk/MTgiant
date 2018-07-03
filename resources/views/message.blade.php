@@ -60,9 +60,17 @@
             })
         })
         $("form").submit(function(e){
+<<<<<<< HEAD
             if($("#username").val()==null){
                 e.preventDefault();
                 alert("名字不能留空哦")
+=======
+	    console.log("form");
+            if($("#username").val()==""){
+                console.log("val");
+	        e.preventDefault();
+                alert("名字不能留空哦");
+>>>>>>> 7636903392c87d4e9f5ecc3f93ac4dc2b34fc6c1
             }
         });
     });
