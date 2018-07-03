@@ -59,6 +59,12 @@
                 }).html(name+":\n"+message).appendTo("#messageArea");
             })
         })
+        $("form").submit(function(e){
+            if($("#username").html()==null){
+                e.preventDefault();
+                alert("名字不能留空哦")
+            }
+        });
     });
     </script>
     <script type="text/javascript">

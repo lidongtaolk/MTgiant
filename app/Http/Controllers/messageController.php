@@ -15,7 +15,7 @@ class messageController extends Controller
         $message=$request->input("message");
         $user=user::where("name",$name)
               ->first();
-        if($user==null){
+        if($user==null&&$name!=null&&$email!=null){
             DB::insert('insert into users (name,email,password) values (?, ?, ?)',[$name,$email,123456]);
         }
         DB::insert('insert into Messages (name,parent_id,message) values (?, ?, ?)',[$name,0,$message]);
