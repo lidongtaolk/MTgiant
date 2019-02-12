@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'PagesController@root')->name('root');
+Route::get('/',function(){
+    return redirect('index.php');
+});
+Route::get('/index.php', 'PagesController@root')->name('root');
 
 Route::get('/test',function(){
     return view('test');
@@ -45,3 +48,6 @@ Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm'
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+
+
+Route::resource("users","UsersController",['only'=>['show','update','edit']]);
