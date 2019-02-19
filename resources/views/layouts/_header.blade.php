@@ -37,7 +37,7 @@
 
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a href="{{ route('users.show',array('user'=>{{ Auth::user()->id }})) }}">
+                                <a href="{{ route('users.show',Auth::id())}}">
                                     个人中心
                                 </a>
                             </li>
