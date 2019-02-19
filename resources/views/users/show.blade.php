@@ -1,4 +1,4 @@
-@extend('layouts.app')
+@extends('layouts.app')
 
 @section('title',$user->name.'的个人中心')
 
