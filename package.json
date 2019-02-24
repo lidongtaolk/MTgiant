@@ -15,7 +15,7 @@
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^1.0",
-        "lodash": "^4.17.4",
+        "lodash": "^4.17.11",
         "vue": "^2.5.7"
     },
     "dependencies": {
@@ -26,6 +26,7 @@
         "gulp-jshint": "^2.1.0",
         "gulp-sass": "^4.0.1",
         "gulp-uglify": "^3.0.0",
-        "jshint": "^2.9.5"
+        "jshint": "^2.10.1",
+        "npm": "^6.8.0"
     }
 }
